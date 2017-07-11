@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EXPERIMENT TAB</title>
+  <style>
+  #parent1,#parent2,#parent3{
+    width:100px;
+    height:100px;
+    border:1px solid red;
+    margin-right:10px;
+    float:left;
+  }
+  .child {
+    float:left;
+    margin-right: 5px;
+  }
+  </style>
+</head>
+<body>
+<div id ="parent1">
+<div class = "child">HELLO</div>
+<div class = "child">HELLO</div>
+</div>
+<div id = "parent2">
+<div class = "child">Hello</div>
+<div class = "child">Hello</div>
+</div>
+<div id = "parent3">
+<div class = "child">Hello</div>
+<div class = "child">Hello</div>
+</div>
+</body>
+<html>

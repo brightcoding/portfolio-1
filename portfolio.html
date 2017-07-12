@@ -4,7 +4,7 @@
 <!--begins html file-->
 <head>
   <title>Heying's Portfolio</title>
-  <style>
+  <style type = "text/css">
   body, html {
     height: 100%;
     width:100%
@@ -17,39 +17,48 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  </style>
-  <style type = "text/css">
   .georgetown {
     background-image:url('https://uadmissions.georgetown.edu/sites/uadmissions/files/styles/rotator_image_overlay_unit_profile/public/aerialview.jpg');
     background-repeat:no-repeat;
     background-position: center;
   }
-  </style>
-  <style>
   #Number1,#Number2 {
     width:50%;
     height:100%;
     float:left;
+    text-align:center;
+    box-shadow:10px 10px 100px black;
   }
-  </style>
-  <style>
-  .text {
-    width:100%;
-    height:50%;
-    text-align: center;
-    vertical-align: middle;
+  .text{
+    vertical-align:middle;
     font-weight:bold;
     font-family: times;
     font-style: italic;
   }
-  .heading{
-    width:100%;
+  .heading {
     height:50%;
-    text-align:center;
-    vertical-align:middle;
-    font-weight: bold;
+    width:100%;
+    margin-top: 0;
+    padding-top: 0;
+    display:table;
+  }
+  .heading p{
+    display: table-cell;
+    vertical-align:bottom;
     font-family:times;
-    font-size:50px
+    font-size:70px;
+    text-shadow:
+    -1px -1px #004445,
+    1px -1px #004445,
+    -1px 1px #004445,
+    1px 1px #004445;
+  }
+  .heading h6{
+    display:table-cell;
+    vertical-align:middle;
+    font-family:times;
+    font-size:50px;
+    font-style:italic;
   }
   </style>
 </head>
@@ -66,8 +75,10 @@
     <div id = "Number2"
     style = "
     background-color:white;">
-    <div class = "heading">Heying's Portfolio</div>
-    <div class = "text">Girls Who Code SIM Washington D.C.</div>
+    <div class = "heading">
+      <p style = "color:#5BC8AC;">Heying's Portfolio<p></div>
+        <p> </p>
+    <div class = "text" style = "color:#F52549;">Girls Who Code SIM @ Georgetown University, Washington D.C.</div>
     </div>
   </div>
 </body>

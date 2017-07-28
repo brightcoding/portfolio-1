@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heying's Portfolio</title>
+  <style>
+  html, body{
+    height:100%;
+    width:100%;
+  }
+  @keyframes flashing {
+    0%{
+      opacity:1;
+    }
+    50%{
+      opacity:0.3;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+  @keyframes flashing2{
+    0%{
+      opacity:0.8;
+    }
+    50%{
+      opacity:1;
+    }
+    100%{
+      opacity:0.8;
+    }
+  }
+  .divoffirstbody{
+    background-image:url("http://cdn.wallpapersafari.com/62/73/072EFy.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+    width:100%;
+    float:none;
+    position: fixed;
+    z-index: 0
+  }
+  .div1{
+    display:table;
+    height:35%;
+    width:100%;
+  }
+  .div1 p{
+    display:table-cell;
+    vertical-align:bottom;
+    text-align:center;
+    height:100%;
+    width:100%;
+    color:white;
+    font-family:times;
+    font-size:120px;
+  }
+  .div1 h6{
+    display:table-cell;
+    vertical-align:top;
+    text-align:center;
+    height:50%;
+    width:100%;
+    color:white;
+    font-family:times;
+    font-size:20px;
+  }
+  .flip-container{
+    perspective:1000px;
+  }
+  .flip-container:hover .flipper, .flip-container.hover .flipper{
+    transform:rotateY(180deg);
+  }
+  .flip-container, .front, .back{
+  }
+  .flipper{
+    transition:0.6s;
+    transform-style:preserve-3d;
+    position:relative;
+  }
+  .front, .back{
+    backface-visibility: hidden;
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .front{
+    z-index:2;
+    transform:rotateY(0deg);
+  }
+  .back{
+    transform:rotateY(180deg);
+  }
+  #num1, #num2{
+    float:left;
+    background-color:white;
+    width:100%;
+    height:100%;
+  }
+  </style>
+</head>
+<body>
+  <div class = "divoffirstbody">
+    <div>
+      <a href = "https://github.com/Heying5397">
+        <img src = "http://www.lpl-aix.fr/~bigi/etc/icons/github.png" style = "width:150px;height:150px;margin-top:10px;margin-left:10px;animation-name:flashing2;animation-duration:4s;animation-iteration-count:infinite;"></img>
+      </a>
+    </div>
+    <div class = "div1">
+      <p>Heying Zhang</p>
+    </div>
+      <p style = "color:white;text-align:center;height:50px;font-size:50px;margin-top:-20px;margin-bottom:15px;animation-name:flashing;animation-duration:2s;animation-iteration-count:infinite;">. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .</p>
+    <div class = "div1">
+      <h6>Girls Who Code SIM @ Georgetown, Washington D.C. | hzhang2@students.chccs.k12.nc.us</h6>
+    </div>
+  </div>
+</body>
+<body>
+  <div style="height:100%;width:100%;z-index:50;position:relative;">
+  </div>
+</body>
+<body style= "background-color:white;">
+  <div style = "background-color:white;width:100%;height:auto;z-index:50;position:relative;">
+    <p style = "font-family:times;font-size:25px;font-style:normal;margin-left:50px;margin-bottom:0px;display:inline-block;margin-top:100px;position:relative;">JUNE 26, 2017</p>
+    <p></p>
+  <div class = "flip-container" ontouchstart = "this.classList.toggle('hover');" style = "margin-left:50px;height:480px;width:800px;">
+    <div class = "flipper">
+      <div class = "front" style = "background-color:yellow;height:480px;width:800px;background-image:url(https://media.xogrp.com/images/97d46db2-5831-4a03-935c-796dea8e7c61);background-size:cover;background-repeat:no-repeat;">
+      </div>
+      <div class = "back" style = "background-color:orange;color:black;width:800px;height:480px">
+        <p style = "margin-left:50px;margin-top:50px;font-size:25px;text-decoration:underline;">First Day of School!</p>
+        <p style = "margin-left:80px;margin-top:20px;font-size:20px; margin-right:50px;margin-bottom:20px;">
+          Today, we met our teachers, Maya, Caroline, and Marcela, and began to learn about computer science. We did a quick project on Scratch that
+          tell other students about ourselves using different sprites. It was very interesting.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div style = "background-color:white;width:100%;height:auto;z-index:50;position:relative;text-align:right;">
+  <p style = "diplay:inline-block;font-family:times;font-size:25px;font-style:normal;margin-right:100px;margin-bottom:0px;display:inline-block;margin-top:200px;position:relative;">JULY 07, 2017</p>
+<p></p>
+<div class = "flip-container" ontouchstart = "this.classList.toggle('hover');" style = "width:800px;height:500px;display:inline-block; text-align:right; margin-right:100px; margin-top:0px;">
+  <div class = "flipper">
+    <div class = "front" style = "width:800px;height:500px;background-color:yellow;background-image:url(https://sites.google.com/a/students.chccs.k12.nc.us/image-upload/_/rsrc/1500056992153/home/Screenshot%20%283%29.png);background-size:cover;background-repeat:no-repeat;box-shadow:10px 10px 10px lightblue;">
+    </div>
+    <div class = "back" style = "width:800px;height:500px;background-color:yellow;color:black;text-align:left;">
+      <p style = "margin-left:50px;margin-top:50px;font-size:25px;text-decoration:underline;">Interactive Story and Portfolio</p>
+      <p style = "margin-left:80px;margin-top:20px;font-size:20px; margin-right:50px;margin-bottom:20px;">
+        Today we used the core4 to create an interactive story like the New York Times Voter Supression Game.
+        Our whole table worked together to create a story about a person making decision between taking care of the needs of his dog and his job.
+        There was little problem that we encountered because we have a simple and short story. I feel quite content in creating interactive stories.
+        However I see one of our peer created a function that allows the story to loop back which is very cool and is something that I want to try if I create an interactive story next time.
+      </p>
+      <a href = "https://github.com/Heying5397/portfolio/blob/gh-pages/Story.py">
+        <p style = "margin-left:80px;margin-top:20px;font-size:20px; margin-right:50px;margin-bottom:20px;">Click Here to See the Code on GitHub!</p>
+      </a>
+      <p style = "margin-left:80px;margin-top:20px;font-size:20px; margin-right:50px;margin-bottom:20px;">
+        Another thing that I worked on is my portfolio.
+        I am trying to create a scroll down website with the first page separated into two pieces.
+        One half of the page will be the picture and the other will be filled with text. I was able to get the page to divide into two sections of different background colors, but whenever I tried to put in an image in one, it just would not show up.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<div style = "background-color:white;width:100%;height:120%;z-index:50;position:relative;text-align:center;">
+  <p style = "font-family:times;font-size:25px;font-style:normal;margin-left:50px;margin-bottom:0px;display:inline-block;margin-top:220px;position:relative;">JULY 10, 2017</p>
+  <p></p>
+<div class = "flip-container" ontouchstart = "this.classList.toggle('hover');" style = "margin-left:50px;height:480px;width:800px;display:inline-block;">
+  <div class = "flipper">
+    <div class = "front" style = "background-color:yellow;height:600px;width:800px;background-image:url(https://cdn.dribbble.com/users/1643824/screenshots/3429154/untitled-4.gif);background-size:cover;background-repeat:no-repeat;">
+    </div>
+    <div class = "back" style = "background-color:orange;color:black;width:800px;height:600px">
+      <p style = "margin-left:50px;margin-top:50px;font-size:25px;text-decoration:underline;text-align:left;">AI, Robots, and Circuits</p>
+      <p style = "margin-left:80px;margin-top:20px;font-size:20px; margin-right:50px;margin-bottom:15px;text-align:left;">
+        Today, we talked a lot about robots. Here are some questions that we have to answer:
+      </p>
+      <p style = "margin-left:80px;margin-top:0px;font-size:18px; margin-right:50px;margin-bottom:5px;text-align:left;font-weight:bold;">
+        We talked a lot about robots and their ethics today. How did your idea of robotics change? What makes you excited about the future of robotics? Nervous?
+      </p>
+      <p style = "margin-left:100px;margin-top:0px;font-size:18px; margin-right:50px;margin-bottom:10px;text-align:left;">
+My idea of a robot did not change that much, though it has added another possibility when I saw the wooden “robots” that works when wind blows on it. I am very excited about the future of robotics especially in the realm of artificial intelligence. I feel nervous about military drones though. One thing that I am concerned about is that the distance between the initiator and the target will allow the person in control of the drone and making decisions to kill to be more comfortable with killing because he/she does not have to deal with death face to face and this can lead to an abuse of power especially with drones which, unlike ballistic missiles, can be easily taken out for use without repeated security measures and time to consider.
+</p>
+<p style = "margin-left:80px;margin-top:0px;font-size:18px; margin-right:50px;margin-bottom:5px;text-align:left;font-weight:bold;">
+You worked on circuits in groups, and will be working in groups, and will be working in groups for the rest of the week. What worked well? What could you do better next time?
+</p>
+<p style = "margin-left:100px;margin-top:0px;font-size:18px; margin-right:50px;margin-bottom:20px;text-align:left;">
+It worked very well for us. Everyone was able to participate, and we accomplish the task quickly and easily. Something that we could do better next time would be to understand why the system work.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+<div style = "background-color:white;width:100%;height:auto;z-index:50;position:relative;text-align:right;">
+  <p style = "diplay:inline-block;font-family:times;font-size:25px;font-style:normal;margin-right:100px;margin-bottom:0px;display:inline-block;margin-top:150px;position:relative;">JULY 12, 2017</p>
+<p></p>
+<!--><div id = "num1"></div><-->
+<div class = "flip-container" ontouchstart = "this.classList.toggle('hover');" style = "width:500px;height:800px;display:inline-block; text-align:right; margin-right:100px; margin-top:0px;">
+  <div class = "flipper">
+    <div class = "front" style = "width:500px;height:700px;background-color:yellow;background-image:url(https://sites.google.com/a/students.chccs.k12.nc.us/image-upload/_/rsrc/1500055633075/home/recolored.jpg);background-size:cover;background-repeat:no-repeat;box-shadow:10px 10px 10px lightblue;">
+    </div>
+    <div class = "back" style = "width:500px;height:700px;background-color:yellow;color:black;text-align:left;">
+      <p style = "margin-left:50px;margin-top:50px;font-size:25px;text-decoration:underline;">Obamicon</p>
+      <p style = "margin-left:80px;margin-top:20px;font-size:20px; margin-right:50px;margin-bottom:20px;">
+        Today, we learned about data structure and tried to create an Obamicon from a picture of our choice. I chose Mr. Beans.
+        There was a lot of confusion during programming in python for the Obamicon, but through helping each other and asking
+        questions, we managed to succeed.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

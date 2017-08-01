@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>edge</title>
+  <style>
+  html, body{
+    height:100%;
+    width:100%;
+  }
+  @keyframes fadeout {
+    0%{opacity:1;}
+    100%{opacity:0;}
+  }
+  .background{
+    height:100%;
+    width:100%;
+    background-image: url("http://9wallpapershd.com/images/2016/03/BEACH-LANDSCAPE-HD-WALLPAPER.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    position:absolute;
+  }
+  .container{
+    display: table;
+    height:100%;
+    width:100%;
+    z-index: 1;
+    position:absolute;
+  }
+  .box1{
+    height:500px;
+    width:500px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    display:table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .box2{
+    height:500px;
+    width:500px;
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+  }
+  </style>
+  <script>
+  </script>
+</head>
+<body>
+  <div class = "background">
+  </div>
+  <div class = "container">
+    <div class = "box1">
+      <div class = "box2">
+        Hello
+      </div>
+    </div>
+  </div>
+</body>
+</html>

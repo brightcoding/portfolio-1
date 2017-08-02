@@ -2,97 +2,12 @@
 <html>
 <head>
   <title>edge</title>
-  <style>
-  html, body{
-    height:100%;
-    width:100%;
-  }
-  @keyframes fadeout {
-    0%{opacity:1;}
-    100%{opacity:0;}
-  }
-  .background{
-    height:100%;
-    width:100%;
-    background-image: url("http://9wallpapershd.com/images/2016/03/BEACH-LANDSCAPE-HD-WALLPAPER.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    z-index: 50;
-    position:absolute;
-  }
-  .container{
-    display: table;
-    height:100%;
-    width:100%;
-    z-index: 51;
-    position:absolute;
-  }
-  .container2{
-    display:table;
-    height:100%;
-    width:100%;
-    z-index:52;
-    position:absolute;
-  }
-  .div2{
-    display:table-cell;
-    vertical-align: middle;
-    text-align: center;
-    color:white;
-    font-size:220px;
-    font-family:Georgia, sans-serif;
-  }
-  .box1{
-    height:300px;
-    width:700px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    display:table;
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
-
-  }
-  .box2{
-    height:300px;
-    width:700px;
-    display:table-cell;
-    vertical-align: middle;
-    text-align: center;
-    background-color: black;
-    opacity:0.6;
-  }
-  .tabcontainer{
-    display:table;
-    height:100%;
-    width:100%;
-    position:absolute;
-    z-index:51;
-    margin-top:175px;
-  }
-  .tab1{
-    display:table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 40px;
-    font-family: Georgia, sans-serif;
-  }
-  @keyframes apthendis {
-    0%{opacity:0;}
-    20%{opacity:0}
-    50%{opacity:1;}
-    90%{opacity:0;}
-    100%{opacity:0;}
-  }
-  </style>
+  <link rel = "stylesheet" type = "text/css" href = "edge.css">
   <script>
   </script>
 </head>
 <body>
+  <div class = "bkgbox" style = "animation-duration:5.8s;animation-name:bkgboxani;animation-fill-mode:forwards;"></div>
   <div class = "background" style = "animation-delay:0.8s; animation-name:fadeout; animation-duration:2s;animation-fill-mode:forwards">
   </div>
   <div class = "container"style = "animation-delay:3s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
@@ -101,12 +16,14 @@
       </div>
     </div>
   </div>
-  <div class = "container2">
-    <div class = "div2" style = "animation-delay:5.8s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">edge
+  <div class = "container2" style = "animation-delay:3s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
+    <div class = "div2">edge
     </div>
   </div>
-  <div class = "tabcontainer">
-    <div class = "tab1" style = "animation-name:apthendis; animation-duration:5.8s; animation-fill-mode:forwards;">Take the Step and Be the Bridge</div>
+  <div class = "tabcontainer" style = "animation-name:apthendis; animation-duration:5.8s; animation-fill-mode:forwards;">
+    <div class = "tab1">Take the Step and Be the Bridge</div>
   </div>
+</body>
+<body>
 </body>
 </html>

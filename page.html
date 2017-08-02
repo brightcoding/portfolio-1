@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>experiment page</title>
+  <style>
+  .buttoncontainer{
+    height:60px;
+    width:100%;
+    background-color: yellow;
+  }
+  .buttoncontainer a{
+    float:left;
+    outline: 1px solid white;
+    height:60px;
+    width:20%;
+    display:table;
+    background-color: black;
+    text-decoration:none;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+  }
+  .buttoncontainer a:hover{
+    background-color: grey;
+  }
+  .buttoncontainer a.active{
+    background-image;
+  }
+  </style>
+  <script>
+  </script>
+</head>
+<body style = "height:100%; width:100%;line-height:0;">
+  <iframe name = "iframe_a" style = "border:none;height:420px;width:100%;background-repeat:no-repeat; background-size:cover; background-position:50%; background-image:url(https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg)"></iframe>
+  <div class = "buttoncontainer">
+    <a href = "file:///C:/Users/GWCUser91/Documents/edge.html" class = "button" target = "iframe_b">
+      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
+        Hello
+      </p>
+    </a>
+    <a href = "#" class = "button">
+      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
+        Hello
+      </p>
+    </a>
+    <a href = "#" class = "button">
+      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
+        Hello
+      </p></a>
+    <a href = "#" class = "button">
+      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
+        Hello
+      </p>
+    </a>
+    <a href = "#" class = "button">
+      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
+        Hello
+      </p>
+    </a>
+  </div>
+  <iframe name = "iframe_b" style = "border:none; margin:0px; height:1000px; width:100%;" scrolling = "no"></iframe>
+</body>
+</html>
+<!--
+I need to use javascript to make the background image scroll at a different speed then the content
+I need to use javascript to make iframe adjust to content size
+I need to use javascript make background image and iframe content change with one button click
+I need to place an icon on the top right for blog
+I need to learn how to make a scroll down when hovered over a button
+need to see if I need iframe_a or use a div and which will be better for the button thing
+notice that background-fit to window will be dependentn on the size of iframe. So for contents under tabs, may need to use pixel size rather than perccentage
+>

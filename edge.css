@@ -1,0 +1,106 @@
+html, body{
+  height:100%;
+  width:100%;
+}
+@keyframes fadeout {
+  0%{opacity:1;}
+  100%{opacity:0;display:none;pointer-events:none;}
+}
+.background{
+  height:100%;
+  width:100%;
+  background-image: url("http://9wallpapershd.com/images/2016/03/BEACH-LANDSCAPE-HD-WALLPAPER.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  z-index: 50;
+  position:absolute;
+  pointer-events: none;
+}
+.container{
+  display: table;
+  height:100%;
+  width:100%;
+  z-index: 51;
+  position:absolute;
+  pointer-events: none;
+}
+.container2{
+  display:table;
+  height:100%;
+  width:100%;
+  z-index:52;
+  position:absolute;
+  pointer-events:none;
+}
+.div2{
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color:white;
+  font-size:220px;
+  font-family:Georgia, sans-serif;
+  text-shadow: 10px 10px 20px black;
+  pointer-events:none;
+}
+.box1{
+  height:300px;
+  width:700px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  display:table;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  pointer-events:none;
+}
+.box2{
+  height:300px;
+  width:700px;
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  opacity:0.6;
+  pointer-events:none;
+}
+.tabcontainer{
+  display:table;
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:51;
+  margin-top:175px;
+  pointer-events:none;
+}
+.tab1{
+  display:table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 40px;
+  font-family: Georgia, sans-serif;
+  pointer-events:none;
+}
+@keyframes apthendis {
+  0%{opacity:0;}
+  20%{opacity:0}
+  50%{opacity:1;}
+  90%{opacity:0;}
+  100%{opacity:0;display:none;pointer-events: none;}
+}
+.bkgbox{
+  height:100%;
+  width:100%;
+  background-color: white;
+  z-index:49;
+  position:absolute;
+  pointer-events:none;
+}
+@keyframes bkgboxani{
+  0%{opacity:1;}
+  48.28%{opacity:1;}
+  100%{opacity:0; display: none;pointer-events: none;}
+}

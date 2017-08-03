@@ -6,7 +6,7 @@
   .buttoncontainer{
     height:60px;
     width:100%;
-    background-color: yellow;
+    background-color: black;
   }
   .buttoncontainer a{
     float:left;
@@ -26,43 +26,196 @@
   .buttoncontainer a.active{
     background-image;
   }
+  .parallax{
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y:auto;
+  }
+  .parallax__layer{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  .parallax__layer--base{
+    transform: translateZ(0);
+  }
+  .parallax__layer--back{
+    transform: translateZ(-1px) scale(2.1);
+  }
+  .clearlayer{
+    height:420px;
+    width:100%;
+  }
+  html, body{
+    height:100%;
+    width:100%;
+  }
+  @keyframes fadeout {
+    0%{opacity:1;}
+    100%{opacity:0;display:none;pointer-events:none;}
+  }
+  .background{
+    height:100%;
+    width:100%;
+    background-image: url("http://9wallpapershd.com/images/2016/03/BEACH-LANDSCAPE-HD-WALLPAPER.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    z-index: 50;
+    position:absolute;
+    pointer-events: none;
+  }
+  .container{
+    display: table;
+    height:100%;
+    width:100%;
+    z-index: 51;
+    position:absolute;
+    pointer-events: none;
+  }
+  .container2{
+    display:table;
+    height:100%;
+    width:100%;
+    z-index:52;
+    position:absolute;
+    pointer-events:none;
+  }
+  .div2{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:white;
+    font-size:220px;
+    font-family:Georgia, sans-serif;
+    text-shadow: 10px 10px 20px black;
+    pointer-events:none;
+  }
+  .box1{
+    height:300px;
+    width:700px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    display:table;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    pointer-events:none;
+  }
+  .box2{
+    height:300px;
+    width:700px;
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: black;
+    opacity:0.6;
+    pointer-events:none;
+  }
+  .tabcontainer{
+    display:table;
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:51;
+    margin-top:175px;
+    pointer-events:none;
+  }
+  .tab1{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, sans-serif;
+    pointer-events:none;
+  }
+  @keyframes apthendis {
+    0%{opacity:0;}
+    20%{opacity:0}
+    50%{opacity:1;}
+    90%{opacity:0;}
+    100%{opacity:0;display:none;pointer-events: none;}
+  }
+  .bkgbox{
+    height:100%;
+    width:100%;
+    background-color: white;
+    z-index:49;
+    position:absolute;
+    pointer-events:none;
+  }
+  @keyframes bkgboxani{
+    0%{opacity:1;}
+    48.28%{opacity:1;}
+    100%{opacity:0; display: none;pointer-events: none;}
+  }
   </style>
   <script>
   </script>
 </head>
-<body style = "height:100%; width:100%;line-height:0;">
-  <iframe name = "iframe_a" style = "border:none;height:420px;width:100%;background-repeat:no-repeat; background-size:cover; background-position:50%; background-image:url(https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg)"></iframe>
+<body>
+  <div class = "bkgbox" style = "animation-duration:7.2s;animation-name:bkgboxani;animation-fill-mode:forwards;"></div>
+  <div class = "background" style = "animation-delay:0.8s; animation-name:fadeout; animation-duration:2s;animation-fill-mode:forwards">
+  </div>
+  <div class = "container"style = "animation-delay:3s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
+    <div class = "box1">
+      <div class = "box2">
+      </div>
+    </div>
+  </div>
+  <div class = "container2" style = "animation-delay:3s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
+    <div class = "div2">edge
+    </div>
+  </div>
+  <div class = "tabcontainer" style = "animation-name:apthendis; animation-duration:5.8s; animation-fill-mode:forwards;">
+    <div class = "tab1">Take the Step and Be the Bridge</div>
+  </div>
+</body>
+<body style = "height:100%; width:100%;line-height:0; overflow-y:hidden; overflow-x:hidden;">
+  <div class = "parallax">
+    <div class = "parallax__layer parallax__layer--back">
+  <div name = "bg" style = "border:none;height:420px;width:100%;background-repeat:no-repeat; background-size:cover; background-position:50%; background-image:url(https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg)"></div>
+</div>
+<div class = "parallax__layer parallax__layer--base">
+  <div class = "clearlayer"></div>
   <div class = "buttoncontainer">
-    <a href = "file:///C:/Users/GWCUser91/Documents/edge.html" class = "button" target = "iframe_b">
-      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
-        Hello
+    <a href = "file:///C:/Users/GWCUser91/Documents/new_portfolio.html" class = "button" target = "iframe_b">
+      <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
+        Home
       </p>
     </a>
     <a href = "#" class = "button">
-      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
-        Hello
+      <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
+        About Us
       </p>
     </a>
     <a href = "#" class = "button">
-      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
-        Hello
+      <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
+        Information
       </p></a>
     <a href = "#" class = "button">
-      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
-        Hello
+      <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
+        News
       </p>
     </a>
     <a href = "#" class = "button">
-      <p style = "display:table-cell; text-align:center; vertical-align:middle;">
-        Hello
+      <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size: 20px;">
+        How Can You Help?
       </p>
     </a>
   </div>
-  <iframe name = "iframe_b" style = "border:none; margin:0px; height:1000px; width:100%;" scrolling = "no"></iframe>
+  <iframe name = "iframe_b" style = "height:100%; background-color:black; border:none; margin:0; padding: 0; width:100%;" frameborder = "0" scrolling = "no"></iframe>
+</div>
+</div>
 </body>
 </html>
 <!--
-I need to use javascript to make the background image scroll at a different speed then the content
 I need to use javascript to make iframe adjust to content size
 I need to use javascript make background image and iframe content change with one button click
 I need to place an icon on the top right for blog

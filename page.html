@@ -157,40 +157,53 @@
   }
   </style>
   <script>
+  function homeButton(){
+    document.getElementById('bg').style.backgroundImage = "url('https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg')";
+    return true;
+  }
+  function aboutUsButton(){
+    document.getElementById('bg').style.backgroundImage = "url('http://natbg.com/wp-content/uploads/2016/10/sunsets-arizona-sunset-arisona-rock-blue-sky-mountains-nature-sun-yellow-clouds-cliff-wallpaper-pictures-hd-1920x1080.jpg')";
+    return true;
+  }
+  function whatCanYouDo (){
+    document.getElementById('bg').style.backgroundImage = "url('https://previews.123rf.com/images/krabata/krabata1108/krabata110800281/10330757-Green-recycling-round-background-Stock-Vector-recycling-waste-recycle.jpg')"
+    return true;
+  }
   </script>
 </head>
 <body>
-  <div class = "bkgbox" style = "animation-duration:7.2s;animation-name:bkgboxani;animation-fill-mode:forwards;"></div>
-  <div class = "background" style = "animation-delay:0.8s; animation-name:fadeout; animation-duration:2s;animation-fill-mode:forwards">
+  <div class = "bkgbox" style = "animation-duration:7.4s;animation-name:bkgboxani;animation-fill-mode:forwards;"></div>
+  <div class = "background" style = "animation-delay:1s; animation-name:fadeout; animation-duration:2s;animation-fill-mode:forwards">
   </div>
-  <div class = "container"style = "animation-delay:3s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
+  <div class = "container"style = "animation-delay:3.2s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
     <div class = "box1">
       <div class = "box2">
       </div>
     </div>
   </div>
-  <div class = "container2" style = "animation-delay:3s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
+  <div class = "container2" style = "animation-delay:3.2s;animation-name:fadeout;animation-duration:2s;animation-fill-mode:forwards;">
     <div class = "div2">edge
     </div>
   </div>
-  <div class = "tabcontainer" style = "animation-name:apthendis; animation-duration:5.8s; animation-fill-mode:forwards;">
+  <div class = "tabcontainer" style = "animation-name:apthendis; animation-duration:6s; animation-fill-mode:forwards;">
     <div class = "tab1">Take the Step and Be the Bridge</div>
   </div>
 </body>
 <body style = "height:100%; width:100%;line-height:0; overflow-y:hidden; overflow-x:hidden;">
   <div class = "parallax">
     <div class = "parallax__layer parallax__layer--back">
-  <div name = "bg" style = "border:none;height:420px;width:100%;background-repeat:no-repeat; background-size:cover; background-position:50%; background-image:url(https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg)"></div>
+  <div id = "bg" style = "border:none;height:420px;width:100%;background-repeat:no-repeat; background-size:cover; background-position:50%; background-image:url(https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg)"></div>
 </div>
 <div class = "parallax__layer parallax__layer--base">
   <div class = "clearlayer"></div>
   <div class = "buttoncontainer">
-    <a href = "file:///C:/Users/GWCUser91/Documents/new_portfolio.html" class = "button" target = "iframe_b">
+    <a href = "file:///C:/Users/GWCUser91/Documents/new_portfolio.html" class = "button" target = "iframe_b"
+    onclick = "homeButton()">
       <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
         Home
       </p>
     </a>
-    <a href = "#" class = "button">
+    <a href = "#" class = "button" onclick = "aboutUsButton()">
       <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
         About Us
       </p>
@@ -204,7 +217,7 @@
         News
       </p>
     </a>
-    <a href = "#" class = "button">
+    <a href = "#" class = "button" onclick = "whatCanYouDo()">
       <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size: 20px;">
         How Can You Help?
       </p>

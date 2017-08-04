@@ -159,10 +159,12 @@
   <script>
   function homeButton(){
     document.getElementById('bg').style.backgroundImage = "url('https://www.walldevil.com/wallpapers/a81/eagle-bird-mountain-forest.jpg')";
+    document.getElementById('iframe1').style.height = "1000px"
     return true;
   }
   function aboutUsButton(){
     document.getElementById('bg').style.backgroundImage = "url('http://natbg.com/wp-content/uploads/2016/10/sunsets-arizona-sunset-arisona-rock-blue-sky-mountains-nature-sun-yellow-clouds-cliff-wallpaper-pictures-hd-1920x1080.jpg')";
+    document.getElementById('iframe1').style.height = "10px"
     return true;
   }
   function whatCanYouDo (){
@@ -197,7 +199,7 @@
 <div class = "parallax__layer parallax__layer--base">
   <div class = "clearlayer"></div>
   <div class = "buttoncontainer">
-    <a href = "file:///C:/Users/GWCUser91/Documents/new_portfolio.html" class = "button" target = "iframe_b"
+    <a href = "file:///C:/Users/GWCUser91/Documents/homepage.html" class = "button" target = "iframe_b"
     onclick = "homeButton()">
       <p style = "display:table-cell; text-align:center; vertical-align:middle; font-size:20px;">
         Home
@@ -223,7 +225,7 @@
       </p>
     </a>
   </div>
-  <iframe name = "iframe_b" style = "height:100%; background-color:black; border:none; margin:0; padding: 0; width:100%;" frameborder = "0" scrolling = "no"></iframe>
+  <iframe id = "iframe1" name = "iframe_b" style = "height:100%; background-color:black; border:none; margin:0; padding: 0; width:100%;" frameborder = "0" scrolling = "no" src = "file:///C:/Users/GWCUser91/Documents/homepage.html"></iframe>
 </div>
 </div>
 </body>
